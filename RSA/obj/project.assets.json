@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\Csharp\\RSA\\RSA.csproj",
+      "projectUniqueName": "D:\\GitHub\\8_semestr_experiment_repo\\RSA\\RSA.csproj",
       "projectName": "RSA",
-      "projectPath": "D:\\GitHub\\Csharp\\RSA\\RSA.csproj",
+      "projectPath": "D:\\GitHub\\8_semestr_experiment_repo\\RSA\\RSA.csproj",
       "packagesPath": "C:\\Users\\silyn\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\Csharp\\RSA\\obj\\",
+      "outputPath": "D:\\GitHub\\8_semestr_experiment_repo\\RSA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

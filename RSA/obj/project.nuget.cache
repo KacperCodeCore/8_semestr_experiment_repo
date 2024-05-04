@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yCFi6LB05tGvRRKV/ZXlIcfLtPGRL8CSUFJKS5vE0qZdOj4nW2VKgj0mox5PB6H13YNZ4RXem86T6G/nMXy9Ww==",
+  "dgSpecHash": "q0IwCrRLcqpzay/hFvDmaIGhD0oFkHstT4c5p2Jip/oXUGLAboljnu3aSqBulbYRo5eLMXwoT+xV3RLzSsumKw==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\Csharp\\RSA\\RSA.csproj",
+  "projectFilePath": "D:\\GitHub\\8_semestr_experiment_repo\\RSA\\RSA.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
