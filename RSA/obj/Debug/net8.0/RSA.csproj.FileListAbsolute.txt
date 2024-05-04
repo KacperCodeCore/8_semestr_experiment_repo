@@ -1,0 +1,14 @@
+D:\GitHub\Csharp\RSA\bin\Debug\net8.0\RSA.exe
+D:\GitHub\Csharp\RSA\bin\Debug\net8.0\RSA.deps.json
+D:\GitHub\Csharp\RSA\bin\Debug\net8.0\RSA.runtimeconfig.json
+D:\GitHub\Csharp\RSA\bin\Debug\net8.0\RSA.dll
+D:\GitHub\Csharp\RSA\bin\Debug\net8.0\RSA.pdb
+D:\GitHub\Csharp\RSA\obj\Debug\net8.0\RSA.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Csharp\RSA\obj\Debug\net8.0\RSA.AssemblyInfoInputs.cache
+D:\GitHub\Csharp\RSA\obj\Debug\net8.0\RSA.AssemblyInfo.cs
+D:\GitHub\Csharp\RSA\obj\Debug\net8.0\RSA.csproj.CoreCompileInputs.cache
+D:\GitHub\Csharp\RSA\obj\Debug\net8.0\RSA.dll
+D:\GitHub\Csharp\RSA\obj\Debug\net8.0\refint\RSA.dll
+D:\GitHub\Csharp\RSA\obj\Debug\net8.0\RSA.pdb
+D:\GitHub\Csharp\RSA\obj\Debug\net8.0\RSA.genruntimeconfig.cache
+D:\GitHub\Csharp\RSA\obj\Debug\net8.0\ref\RSA.dll
