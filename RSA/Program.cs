@@ -1,6 +1,5 @@
-﻿using System.Numerics;
-
-Random random = new Random();
+﻿// RSA
+using System.Numerics;
 
 BigInteger p = 3407;
 BigInteger q = 3779;
