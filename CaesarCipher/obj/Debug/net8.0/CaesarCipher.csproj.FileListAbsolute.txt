@@ -1,0 +1,15 @@
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\bin\Debug\net8.0\CaesarCipher.exe
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\bin\Debug\net8.0\CaesarCipher.deps.json
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\bin\Debug\net8.0\CaesarCipher.runtimeconfig.json
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\bin\Debug\net8.0\CaesarCipher.dll
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\bin\Debug\net8.0\CaesarCipher.pdb
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\obj\Debug\net8.0\CaesarCipher.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\obj\Debug\net8.0\CaesarCipher.AssemblyInfoInputs.cache
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\obj\Debug\net8.0\CaesarCipher.AssemblyInfo.cs
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\obj\Debug\net8.0\CaesarCipher.csproj.CoreCompileInputs.cache
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\obj\Debug\net8.0\CaesarCipher.sourcelink.json
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\obj\Debug\net8.0\CaesarCipher.dll
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\obj\Debug\net8.0\refint\CaesarCipher.dll
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\obj\Debug\net8.0\CaesarCipher.pdb
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\obj\Debug\net8.0\CaesarCipher.genruntimeconfig.cache
+D:\GitHub\8_semestr_experiment_repo\CaesarCipher\obj\Debug\net8.0\ref\CaesarCipher.dll
