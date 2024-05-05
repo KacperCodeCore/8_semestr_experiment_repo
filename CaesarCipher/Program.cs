@@ -13,10 +13,6 @@ class CaesarCipher
                 char offset = char.IsUpper(ch) ? 'A' : 'a';
                 result += (char)((((ch + shift) - offset) % 26) + offset);
             }
-            else if (char.IsNumber(ch))
-            {
-                result += ch % 9;
-            }
             else
             {
                 result += ch;
