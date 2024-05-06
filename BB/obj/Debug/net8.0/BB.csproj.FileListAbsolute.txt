@@ -1,0 +1,15 @@
+D:\GitHub\8_semestr_experiment_repo\BB\bin\Debug\net8.0\BB.exe
+D:\GitHub\8_semestr_experiment_repo\BB\bin\Debug\net8.0\BB.deps.json
+D:\GitHub\8_semestr_experiment_repo\BB\bin\Debug\net8.0\BB.runtimeconfig.json
+D:\GitHub\8_semestr_experiment_repo\BB\bin\Debug\net8.0\BB.dll
+D:\GitHub\8_semestr_experiment_repo\BB\bin\Debug\net8.0\BB.pdb
+D:\GitHub\8_semestr_experiment_repo\BB\obj\Debug\net8.0\BB.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\8_semestr_experiment_repo\BB\obj\Debug\net8.0\BB.AssemblyInfoInputs.cache
+D:\GitHub\8_semestr_experiment_repo\BB\obj\Debug\net8.0\BB.AssemblyInfo.cs
+D:\GitHub\8_semestr_experiment_repo\BB\obj\Debug\net8.0\BB.csproj.CoreCompileInputs.cache
+D:\GitHub\8_semestr_experiment_repo\BB\obj\Debug\net8.0\BB.sourcelink.json
+D:\GitHub\8_semestr_experiment_repo\BB\obj\Debug\net8.0\BB.dll
+D:\GitHub\8_semestr_experiment_repo\BB\obj\Debug\net8.0\refint\BB.dll
+D:\GitHub\8_semestr_experiment_repo\BB\obj\Debug\net8.0\BB.pdb
+D:\GitHub\8_semestr_experiment_repo\BB\obj\Debug\net8.0\BB.genruntimeconfig.cache
+D:\GitHub\8_semestr_experiment_repo\BB\obj\Debug\net8.0\ref\BB.dll
