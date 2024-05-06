@@ -1,0 +1,15 @@
+D:\GitHub\8_semestr_experiment_repo\PPP\bin\Debug\net8.0\PPP.exe
+D:\GitHub\8_semestr_experiment_repo\PPP\bin\Debug\net8.0\PPP.deps.json
+D:\GitHub\8_semestr_experiment_repo\PPP\bin\Debug\net8.0\PPP.runtimeconfig.json
+D:\GitHub\8_semestr_experiment_repo\PPP\bin\Debug\net8.0\PPP.dll
+D:\GitHub\8_semestr_experiment_repo\PPP\bin\Debug\net8.0\PPP.pdb
+D:\GitHub\8_semestr_experiment_repo\PPP\obj\Debug\net8.0\PPP.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\8_semestr_experiment_repo\PPP\obj\Debug\net8.0\PPP.AssemblyInfoInputs.cache
+D:\GitHub\8_semestr_experiment_repo\PPP\obj\Debug\net8.0\PPP.AssemblyInfo.cs
+D:\GitHub\8_semestr_experiment_repo\PPP\obj\Debug\net8.0\PPP.csproj.CoreCompileInputs.cache
+D:\GitHub\8_semestr_experiment_repo\PPP\obj\Debug\net8.0\PPP.sourcelink.json
+D:\GitHub\8_semestr_experiment_repo\PPP\obj\Debug\net8.0\PPP.dll
+D:\GitHub\8_semestr_experiment_repo\PPP\obj\Debug\net8.0\refint\PPP.dll
+D:\GitHub\8_semestr_experiment_repo\PPP\obj\Debug\net8.0\PPP.pdb
+D:\GitHub\8_semestr_experiment_repo\PPP\obj\Debug\net8.0\PPP.genruntimeconfig.cache
+D:\GitHub\8_semestr_experiment_repo\PPP\obj\Debug\net8.0\ref\PPP.dll
