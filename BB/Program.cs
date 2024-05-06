@@ -1,4 +1,5 @@
-﻿//--Preparation-----------------------------------------------------------------
+﻿// BB
+//--Preparation-----------------------------------------------------------------
 const int N = 4;
 List<int> A = new List<int>();
 List<int> B = new List<int>();
@@ -10,7 +11,7 @@ double currentDistance = 0;
 double bestDistance = 9999999;
 double lastMoveDistance = 0;
 
-for (int i = 1; i < N+1; i++)
+for (int i = 1; i < N + 1; i++)
 {
     B.Add(i);
 }
@@ -50,48 +51,53 @@ BB();
 
 
 //--functions-----------------------------------------------------------------------------------
-void PrintAB(){
-        Console.Write("\nA: ");
+void PrintAB()
+{
+    Console.Write("\nA: ");
     foreach (var item in A)
     {
-    Console.Write(item + " ");
+        Console.Write(item + " ");
     }
     foreach (var item in B)
     {
-    Console.Write("  ");
+        Console.Write("  ");
     }
-        Console.Write("  B: ");
+    Console.Write("  B: ");
     foreach (var item in B)
     {
-    Console.Write(item + " ");
+        Console.Write(item + " ");
     }
     foreach (var item in A)
     {
-    Console.Write("  ");
+        Console.Write("  ");
     }
-    Console.Write($"CurrentDistance: {currentDistance, -10:F2}");
-    Console.Write($"LastMoveDistance: {lastMoveDistance, -10:F2}");
+    Console.Write($"CurrentDistance: {currentDistance,-10:F2}");
+    Console.Write($"LastMoveDistance: {lastMoveDistance,-10:F2}");
     Console.Write($"BestDistance: {bestDistance:F2}");
 }
-void PrintPoints(){
+void PrintPoints()
+{
     Console.Write("\nPoints: ");
     foreach (var item in points)
     {
-    Console.Write($"({item.X},{item.Y}) ");
+        Console.Write($"({item.X},{item.Y}) ");
     }
 }
 
-double DistanceBetweenPoints(Point a, Point b){
+double DistanceBetweenPoints(Point a, Point b)
+{
     double deltaX = b.X - a.Y;
     double deltaY = b.Y - a.Y;
-    return Math.Sqrt(deltaX*deltaX + deltaY*deltaY);
+    return Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
 }
 
-bool Oracle(){
+bool Oracle()
+{
     return currentDistance < bestDistance;
 }
 
-void BB(){
+void BB()
+{
     // PrintAB();
     if (B.Count == 0)
     {
@@ -110,7 +116,7 @@ void BB(){
             int x = B[0];
             A.Add(x);
             B.RemoveAt(0);
-            lastMoveDistance = DistanceBetweenPoints(points[A.Count -1], points[A.Count -2]);
+            lastMoveDistance = DistanceBetweenPoints(points[A.Count - 1], points[A.Count - 2]);
             currentDistance += lastMoveDistance;
             PrintAB();
             // if (B.Count == 0){
@@ -121,8 +127,8 @@ void BB(){
             //     }
             // }
 
-            if(Oracle())
-            { 
+            if (Oracle())
+            {
                 BB();
                 // Console.Write($"\n  -CurrentDistance: {currentDistance:F2}   BestDistance: {bestDistance:F2}");
                 // if (currentDistance < bestDistance)
@@ -131,10 +137,10 @@ void BB(){
                 // }
             }
 
-            lastMoveDistance = -DistanceBetweenPoints(points[A.Count -1], points[A.Count -2]);
+            lastMoveDistance = -DistanceBetweenPoints(points[A.Count - 1], points[A.Count - 2]);
             currentDistance += lastMoveDistance;
-            x = A[A.Count -1];
-            A.RemoveAt(A.Count -1);
+            x = A[A.Count - 1];
+            A.RemoveAt(A.Count - 1);
             B.Add(x);
             PrintAB();
 
@@ -152,10 +158,11 @@ void BB(){
 //--Classes-------------------------------------------------------------------------------------------
 class Point
 {
-    public int X{get; set;}
-    public int Y{get; set;}
+    public int X { get; set; }
+    public int Y { get; set; }
 
-    public Point(int x, int y){
+    public Point(int x, int y)
+    {
         X = x;
         Y = y;
     }
