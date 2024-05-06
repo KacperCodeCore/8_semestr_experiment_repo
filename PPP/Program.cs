@@ -1,4 +1,4 @@
-﻿// PPP
+﻿// PPP 
 using System.Numerics;
 
 BigInteger[] v = [3, 7, 12, 29, 61, 129];
