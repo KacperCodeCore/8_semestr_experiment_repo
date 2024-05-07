@@ -3,6 +3,7 @@
 const int N = 4;
 List<int> A = new List<int>();
 List<int> B = new List<int>();
+List<int> BestA = new List<int>();
 Random rand = new Random();
 Point[] points = new Point[N];
 
@@ -17,13 +18,13 @@ for (int i = 1; i < N + 1; i++)
 }
 
 //creating random B
-for (int i = B.Count - 1; i > 0; i--)
-{
-    int j = rand.Next(1, i + 1);
-    int temp = B[i];
-    B[i] = B[j];
-    B[j] = temp;
-}
+// for (int i = B.Count - 1; i > 0; i--)
+// {
+//     int j = rand.Next(1, i + 1);
+//     int temp = B[i];
+//     B[i] = B[j];
+//     B[j] = temp;
+// }
 //add starting point
 int x = B[0];
 A.Add(x);
@@ -44,16 +45,16 @@ for (int i = 0; i < N; i++)
 //--Start----------------------------------------------------------------------------------
 PrintPoints();
 BB();
-
+PrintBestA();
 
 
 
 
 
 //--functions-----------------------------------------------------------------------------------
-void PrintAB()
+void PrintAB(String sign)
 {
-    Console.Write("\nA: ");
+    Console.Write($"{sign}A: ");
     foreach (var item in A)
     {
         Console.Write(item + " ");
@@ -73,15 +74,16 @@ void PrintAB()
     }
     Console.Write($"CurrentDistance: {currentDistance,-10:F2}");
     Console.Write($"LastMoveDistance: {lastMoveDistance,-10:F2}");
-    Console.Write($"BestDistance: {bestDistance:F2}");
+    Console.Write($"BestDistance: {bestDistance:F2}\n");
 }
 void PrintPoints()
 {
-    Console.Write("\nPoints: ");
+    Console.Write("Points: ");
     foreach (var item in points)
     {
         Console.Write($"({item.X},{item.Y}) ");
     }
+    Console.Write("\n");
 }
 
 double DistanceBetweenPoints(Point a, Point b)
@@ -98,15 +100,15 @@ bool Oracle()
 
 void BB()
 {
-    // PrintAB();
+    // // PrintAB();
     if (B.Count == 0)
     {
-        Console.Write($"\n  -CurrentDistance: {currentDistance:F2}   BestDistance: {bestDistance:F2}");
+        Console.Write($"  -CurrentDistance: {currentDistance:F2}   BestDistance: {bestDistance:F2}\n");
         if (currentDistance < bestDistance)
         {
             bestDistance = currentDistance;
         }
-        // return;
+        //return;
     }
     else
     {
@@ -118,12 +120,16 @@ void BB()
             B.RemoveAt(0);
             lastMoveDistance = DistanceBetweenPoints(points[A.Count - 1], points[A.Count - 2]);
             currentDistance += lastMoveDistance;
-            PrintAB();
-            // if (B.Count == 0){
-            //     Console.Write($"\n  -CurrentDistance: {currentDistance:F2}   BestDistance: {bestDistance:F2}");
+            PrintAB("+");
+
+            // if (B.Count == 0)
+            // {
+            //     Console.Write($"  -CurrentDistance: {currentDistance:F2}   BestDistance: {bestDistance:F2}\n");
             //     if (currentDistance < bestDistance)
             //     {
             //         bestDistance = currentDistance;
+            //         BestA = new List<int>(A);
+            //         PrintBestA();
             //     }
             // }
 
@@ -137,18 +143,28 @@ void BB()
                 // }
             }
 
-            lastMoveDistance = -DistanceBetweenPoints(points[A.Count - 1], points[A.Count - 2]);
-            currentDistance += lastMoveDistance;
+            lastMoveDistance = DistanceBetweenPoints(points[A.Count - 1], points[A.Count - 2]);
+            currentDistance -= lastMoveDistance;
             x = A[A.Count - 1];
             A.RemoveAt(A.Count - 1);
             B.Add(x);
-            PrintAB();
+            PrintAB("-");
 
 
             // timeOut--;
             // if(timeOut <= 0){break;}
         }
     }
+}
+
+void PrintBestA()
+{
+    Console.Write($" BestA: ");
+    foreach (var item in BestA)
+    {
+        Console.Write(item + " ");
+    }
+    Console.Write("\n");
 }
 
 
