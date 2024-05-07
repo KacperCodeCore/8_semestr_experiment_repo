@@ -21,7 +21,7 @@ namespace ChainOfResponsibilityPattern
         {
             if (request == "sprzedaż")
             {
-                Console.WriteLine("Sprzedano produkt.");
+                Console.WriteLine("Sprzedano produkt. ");
             }
             else
             {
