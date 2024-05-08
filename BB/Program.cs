@@ -88,7 +88,7 @@ void PrintPoints()
 
 double DistanceBetweenPoints(Point a, Point b)
 {
-    double deltaX = b.X - a.Y;
+    double deltaX = b.X - a.X;
     double deltaY = b.Y - a.Y;
     return Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
 }
@@ -122,16 +122,16 @@ void BB()
             currentDistance += lastMoveDistance;
             PrintAB("+");
 
-            // if (B.Count == 0)
-            // {
-            //     Console.Write($"  -CurrentDistance: {currentDistance:F2}   BestDistance: {bestDistance:F2}\n");
-            //     if (currentDistance < bestDistance)
-            //     {
-            //         bestDistance = currentDistance;
-            //         BestA = new List<int>(A);
-            //         PrintBestA();
-            //     }
-            // }
+            if (B.Count == 0)
+            {
+                Console.Write($"  -CurrentDistance: {currentDistance:F2}   BestDistance: {bestDistance:F2}\n");
+                if (currentDistance < bestDistance)
+                {
+                    bestDistance = currentDistance;
+                    BestA = new List<int>(A);
+                    PrintBestA();
+                }
+            }
 
             if (Oracle())
             {
