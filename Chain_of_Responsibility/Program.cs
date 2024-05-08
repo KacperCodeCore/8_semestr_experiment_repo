@@ -45,7 +45,6 @@ namespace ChainOfResponsibilityPattern
         }
     }
 
-    // Konkretny handler dla obsługi telefonu
     public class PhoneHandler : Handler
     {
         public override void HandleRequest(string request)
