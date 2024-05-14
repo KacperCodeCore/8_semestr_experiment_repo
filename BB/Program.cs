@@ -33,7 +33,7 @@ B.RemoveAt(0);
 //set points
 for (int i = 0; i < N; i++)
 {
-    points[i] = new Point(rand.Next(1, 400), rand.Next(1, 400));
+    points[i] = new Point(rand.Next(1, 10000), rand.Next(1, 10000));
 }
 
 
@@ -72,6 +72,14 @@ void PrintAB(String sign)
     {
         Console.Write("  ");
     }
+    // Console.Write($"CurrentDistance: {currentDistance,-10:F2}");
+    // Console.Write($"LastMoveDistance: {lastMoveDistance,-10:F2}");
+    // Console.Write($"BestDistance: {bestDistance:F2}\n");
+    PrintDistanceData();
+}
+
+void PrintDistanceData()
+{
     Console.Write($"CurrentDistance: {currentDistance,-10:F2}");
     Console.Write($"LastMoveDistance: {lastMoveDistance,-10:F2}");
     Console.Write($"BestDistance: {bestDistance:F2}\n");
@@ -91,6 +99,7 @@ double DistanceBetweenPoints(Point a, Point b)
     double deltaX = b.X - a.X;
     double deltaY = b.Y - a.Y;
     return Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
+
 }
 
 bool Oracle()
@@ -118,9 +127,12 @@ void BB()
             int x = B[0];
             A.Add(x);
             B.RemoveAt(0);
-            lastMoveDistance = DistanceBetweenPoints(points[A.Count - 1], points[A.Count - 2]);
+            // Console.WriteLine($" ----  {A[A.Count - 1]} {A[A.Count - 2]}");
+            lastMoveDistance = DistanceBetweenPoints(points[A[A.Count - 1] - 1], points[A[A.Count - 2] - 1]);
             currentDistance += lastMoveDistance;
             PrintAB("+");
+
+
 
             if (B.Count == 0)
             {
@@ -143,12 +155,13 @@ void BB()
                 // }
             }
 
-            lastMoveDistance = DistanceBetweenPoints(points[A.Count - 1], points[A.Count - 2]);
-            currentDistance -= lastMoveDistance;
+            lastMoveDistance = -DistanceBetweenPoints(points[A[A.Count - 1] - 1], points[A[A.Count - 2] - 1]);
+            currentDistance += lastMoveDistance;
             x = A[A.Count - 1];
             A.RemoveAt(A.Count - 1);
             B.Add(x);
             PrintAB("-");
+
 
 
             // timeOut--;
