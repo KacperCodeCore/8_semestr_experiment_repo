@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Chain_of_Responsibility")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18866be733b3ef6b05c00b1af6e1b07bf44335b5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4852db08120583ed7df93ee93f0a9905406d1fb6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Chain_of_Responsibility")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Chain_of_Responsibility")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
